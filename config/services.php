@@ -31,4 +31,12 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'postal' => [
+        'region' => env('POSTAL_REGION', 'us-east-1'),
+        'key' => env('POSTAL_ACCESS_KEY_ID'),
+        'secret' => env('POSTAL_SECRET_ACCESS_KEY'),
+        'queue_url' => env('POSTAL_QUEUE_URL'),
+        'bucket' => env('POSTAL_BUCKET')
+    ]
+
 ];
