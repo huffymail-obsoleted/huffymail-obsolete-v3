@@ -13,3 +13,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::get('/messages', [\App\Http\Controllers\MessagesController::class, 'index']);
+Route::get('/messages/{id}', [\App\Http\Controllers\MessagesController::class, 'show']);

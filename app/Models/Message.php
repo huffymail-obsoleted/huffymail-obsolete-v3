@@ -18,4 +18,17 @@ class Message extends Model
         'subject',
         'html',
     ];
+
+    public const COLUMNS_FOR_LIST = [
+        'id',
+        'message_id',
+        'from',
+        'to',
+        'spam_verdict',
+        'virus_verdict',
+        'subject',
+        // 'html',
+        'created_at',
+        'updated_at',
+    ];
 }
